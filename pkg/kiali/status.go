@@ -13,6 +13,8 @@ import (
 	"github.com/containers/kubernetes-mcp-server/pkg/klogutil"
 )
 
+const maxResponseBodySize = 10 * 1024 * 1024 // 10 MiB
+
 const (
 	statusPath         = "/api/status"
 	statusProbeTimeout = time.Second
